@@ -29,8 +29,11 @@ section#login {
     background-color: white;
     width: 320px;
     height: 550px;
-    border-radius: 10px;
+    border-radius: 7px;
     box-shadow: -5px 5px 15px #4f30744b;
+
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), 
+            height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 section#login > #imagem {

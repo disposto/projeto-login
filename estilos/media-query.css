@@ -20,6 +20,24 @@
         float: left;
         width: 60%;
     }
+
+    /* h1 maior e com espaçamento top melhor */
+    div#formulario > h1 {
+        font-size: 1.8em;       /* aumenta proporcionalmente ao mobile */
+        padding-top: 15px;
+        margin-bottom: 12px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    /* p maior e max-width ajustado para não quebrar linha */
+    div#formulario > p {
+        font-size: 0.95em;      /* leitura confortável */
+        line-height: 1.5;
+        max-width: 350px;       /* proporcional à largura do form no tablet */
+        margin: 0 auto;
+        text-align: center;     /* centraliza o texto curto */
+    }
  
 }
 
@@ -43,5 +61,20 @@
         float: left;
         width: 50%;
     }
+
+    div#formulario > h1 {
+        font-weight: 600;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        line-height: 1.6;
+        max-width: 400px;   /* menor que 50% da box com padding */
+        margin: 0 auto;
+        text-align: center;      /* se quiser aquele recuo no início */
+}
     
 }

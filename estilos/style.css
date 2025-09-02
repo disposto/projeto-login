@@ -1,3 +1,4 @@
+/* style.css */
 @charset "UTF-8";
 
 * {
@@ -33,7 +34,7 @@ section#login {
     box-shadow: -5px 5px 15px #4f30744b;
 
     transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), 
-            height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+                height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 section#login > #imagem {
@@ -44,6 +45,54 @@ section#login > #imagem {
 }
 
 section#login > div#formulario {
-    display: block;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* centraliza horizontalmente */
+    justify-content: flex-start; /* começa do topo do espaço disponível */
+    height: calc(100% - 200px); /* evita sobreposição da imagem */
+    padding: 20px 10px;         /* mais espaço superior */
+}
+
+div#formulario > h1 {
+    margin-top: 10px;           /* sobe o h1 */
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+div#formulario > p {
+    margin-bottom: 15px;        /* deixa espaço entre p e os campos */
+    font-weight: 400;
+    font-size: .8em;
+    text-align: center;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;       /* ocupa toda a largura do formulário */
+    max-width: 250px;  /* largura máxima do campo, ajusta pro mobile */
+    margin: 10px auto; /* centraliza horizontalmente */
+}
+
+
+.campo > label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.campo > input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;   /* borda fininha e cinza moderno */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campo > input:focus {
+    border-color: #999;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }

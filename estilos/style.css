@@ -60,11 +60,36 @@ div#formulario > h1 {
     font-weight: 600;
 }
 
-div#formulario > p {
-    margin-bottom: 15px;        /* deixa espaço entre p e os campos */
-    font-weight: 400;
-    font-size: .8em;
-    text-align: center;
+#logar {
+    display: block;           /* transforma em bloco */
+    width: 200px;             /* largura do botão */
+    margin: 15px auto 0 auto; /* 20px topo, centralizado horizontal */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E16ED3;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#logar:hover {
+    background-color: #a5529b;
+}
+
+form > a.botao {
+    display: flex;             /* block-level flex container */
+    justify-content: center;   /* centraliza horizontalmente */
+    align-items: center;       /* centraliza verticalmente */
+    gap: 5px;                  /* espaço entre texto e ícone */
+    color: #af4ca4;
+    text-decoration: none;
+    margin: 10px auto 0 auto; /* centraliza o a no form */
+    width: fit-content;        /* só ocupa o espaço necessário */
+}
+
+form > a > span {
+    margin-top: 5px;
 }
 
 .campo {
